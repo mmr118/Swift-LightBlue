@@ -260,39 +260,18 @@
 		6CDD915E1C35964400DBC2E2 /* Swift-LightBlue */ = {
 			isa = PBXGroup;
 			children = (
-				5DC750C121DF6BF60012B16C /* AboutMeViewController.swift */,
-				6CDD915F1C35964400DBC2E2 /* AppDelegate.swift */,
-				5DC750B721DF64A90012B16C /* Assets.xcassets */,
-				5D1A78CD21E1ACD9004E89AB /* Cell */,
-				6C195EB01C57C2BC00AEF1DA /* CharacteristicController.swift */,
-				6C195EB21C57C2D200AEF1DA /* CharacteristicController.xib */,
-				6C130A2A1C6139E200E827B1 /* EditValueController.swift */,
-				6C130A2B1C6139E200E827B1 /* EditValueController.xib */,
-				5D1A78E321E1ACED004E89AB /* Extension */,
-				5DC750BB21DF67320012B16C /* FilterViewController.swift */,
-				6CDD916B1C35964400DBC2E2 /* Info.plist */,
-				5DC750BF21DF6B440012B16C /* InfoViewController.swift */,
-				6CDD91681C35964400DBC2E2 /* LaunchScreen.storyboard */,
-				5D227D2921DF6605006BE6DB /* LogViewController.swift */,
-				5D227D2A21DF6605006BE6DB /* LogViewController.xib */,
-				6CDD91631C35964400DBC2E2 /* Main.storyboard */,
-				6CDD91611C35964400DBC2E2 /* MainController.swift */,
-				5D1A78E821E1AD49004E89AB /* Model */,
-				6CB465571C3D788300D16277 /* NewVirtualPeripheralController.swift */,
-				6CB655D71C438F1E00128BC6 /* PeripheralController.swift */,
-				6CB655D81C438F1E00128BC6 /* PeripheralController.xib */,
-				6C7526101C397A93009445CE /* RootController.swift */,
-				5D1A78ED21E1AD70004E89AB /* Store */,
 				6CFFE93C1C44920C00D061ED /* Utils */,
+				5D1A78E321E1ACED004E89AB /* Extension */,
+				5D1A78E821E1AD49004E89AB /* Model */,
+				5D1A78CD21E1ACD9004E89AB /* Cell */,
 				6CB464B01C3CCF5600D16277 /* View */,
-				5DBAA11B21DCC9AE00FE075F /* VirtualPeripheralViewController.swift */,
-				5DBAA11C21DCC9AE00FE075F /* VirtualPeripheralViewController.xib */,
-				5D1FE09021EC30E500686479 /* EditCharacteristicViewController.swift */,
-				5D1FE09121EC30E500686479 /* EditCharacteristicViewController.xib */,
-				5D1FE09821EC30E500686479 /* EditCharacteristicPropertyTableViewController.swift */,
-				5D1FE09A21EC30E500686479 /* EditValueViewController.swift */,
-				5D1FE09B21EC30E500686479 /* EditValueViewController.xib */,
-				5D7211AF21E59624008CB20C /* ServiceTableViewController.swift */,
+				97681D8F291474B7005EEC17 /* Controllers */,
+				97681D90291474E2005EEC17 /* Nibs */,
+				5D1A78ED21E1AD70004E89AB /* Store */,
+				6CDD915F1C35964400DBC2E2 /* AppDelegate.swift */,
+				97681D9129147500005EEC17 /* Storyboards */,
+				5DC750B721DF64A90012B16C /* Assets.xcassets */,
+				6CDD916B1C35964400DBC2E2 /* Info.plist */,
 			);
 			path = "Swift-LightBlue";
 			sourceTree = "<group>";
@@ -321,6 +300,51 @@
 				6CFFE93D1C44923100D061ED /* AlertUtil.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		97681D8F291474B7005EEC17 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5D1FE09821EC30E500686479 /* EditCharacteristicPropertyTableViewController.swift */,
+				5DC750C121DF6BF60012B16C /* AboutMeViewController.swift */,
+				6C195EB01C57C2BC00AEF1DA /* CharacteristicController.swift */,
+				6C130A2A1C6139E200E827B1 /* EditValueController.swift */,
+				5DC750BB21DF67320012B16C /* FilterViewController.swift */,
+				5DC750BF21DF6B440012B16C /* InfoViewController.swift */,
+				5D227D2921DF6605006BE6DB /* LogViewController.swift */,
+				6CDD91611C35964400DBC2E2 /* MainController.swift */,
+				6CB465571C3D788300D16277 /* NewVirtualPeripheralController.swift */,
+				6CB655D71C438F1E00128BC6 /* PeripheralController.swift */,
+				6C7526101C397A93009445CE /* RootController.swift */,
+				5DBAA11B21DCC9AE00FE075F /* VirtualPeripheralViewController.swift */,
+				5D1FE09021EC30E500686479 /* EditCharacteristicViewController.swift */,
+				5D1FE09A21EC30E500686479 /* EditValueViewController.swift */,
+				5D7211AF21E59624008CB20C /* ServiceTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		97681D90291474E2005EEC17 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				6C195EB21C57C2D200AEF1DA /* CharacteristicController.xib */,
+				6C130A2B1C6139E200E827B1 /* EditValueController.xib */,
+				5D227D2A21DF6605006BE6DB /* LogViewController.xib */,
+				6CB655D81C438F1E00128BC6 /* PeripheralController.xib */,
+				5DBAA11C21DCC9AE00FE075F /* VirtualPeripheralViewController.xib */,
+				5D1FE09121EC30E500686479 /* EditCharacteristicViewController.xib */,
+				5D1FE09B21EC30E500686479 /* EditValueViewController.xib */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+		97681D9129147500005EEC17 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6CDD91681C35964400DBC2E2 /* LaunchScreen.storyboard */,
+				6CDD91631C35964400DBC2E2 /* Main.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
