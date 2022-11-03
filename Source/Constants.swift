@@ -8,7 +8,12 @@
 
 import Foundation
 
-enum PeripheralNotificationKeys : String { // The notification name of peripheral
-    case DisconnectNotif = "disconnectNotif" // Disconnect notification name
-    case CharacteristicNotif = "characteristicNotif" // Characteristic discover notification name 
+/// The notification name of peripheral
+enum PeripheralNotificationKeys : String {
+    
+    /// Disconnect notification name
+    case DisconnectNotif = "disconnectNotif"
+
+    /// Characteristic discover notification name
+    case CharacteristicNotif = "characteristicNotif"
 }

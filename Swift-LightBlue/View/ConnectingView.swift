@@ -44,7 +44,7 @@ class ConnectingView: UIView {
         
         let activityIndicatorView =  UIActivityIndicatorView()
         activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
-        activityIndicatorView.style = .gray
+        activityIndicatorView.style = UIActivityIndicatorView.Style.medium
         activityIndicatorView.startAnimating()
         contentView.addSubview(activityIndicatorView)
         
@@ -76,7 +76,7 @@ class ConnectingView: UIView {
      Show the ConnectingView
      */
     static func showConnectingView() -> ConnectingView {
-        if let window = UIApplication.shared.keyWindow {
+        if let window = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first {
             window.addSubview(Static.connectingView)
         }
         return Static.connectingView

@@ -74,7 +74,7 @@ class UnavailableView : UIView {
      Show the UnavailableView
      */
     static func showUnavailableView() {
-        if let window = UIApplication.shared.keyWindow {
+        if let window = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first {
             window.addSubview(Static.unavailableView)
         }
     }

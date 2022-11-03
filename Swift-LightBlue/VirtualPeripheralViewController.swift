@@ -76,8 +76,9 @@ class VirtualPeripheralViewController: UIViewController, UITableViewDelegate, UI
         if section == 0 {
             titleLabel.text = "GENERAL"
         } else {
-            let uuidString = virtualPeripheral.services[section - 1].uuidString
-            titleLabel.text = CBUUID(string: uuidString).name ?? "UUID: \(uuidString)"
+            let service = virtualPeripheral.services[section - 1]
+            let uuidString = service.uuidString
+            titleLabel.text = service.standardKind?.name ?? "UUID: \(uuidString)"
         }
         titleLabel.sizeToFit()
         titleLabel.frame = CGRect(origin: CGPoint(x: 15, y: (40.0 - titleLabel.frame.size.height) / 2.0), size: titleLabel.frame.size)
@@ -120,7 +121,7 @@ class VirtualPeripheralViewController: UIViewController, UITableViewDelegate, UI
         }
         
         let charactristic = virtualPeripheral.services[indexPath.section - 1].characteristics[indexPath.row]
-        cell.textLabel?.text = CBUUID(string: charactristic.uuidString).name ?? "0x\(charactristic.uuidString)"
+        cell.textLabel?.text = charactristic.standardKind?.name ?? "0x\(charactristic.uuidString)"
         cell.detailTextLabel?.text = "Properties: \(charactristic.properties.cbProperties.names.joined(separator: " "))"
         cell.textLabel?.adjustsFontSizeToFitWidth = true
         return cell
