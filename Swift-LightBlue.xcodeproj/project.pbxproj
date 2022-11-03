@@ -391,16 +391,18 @@
 				TargetAttributes = {
 					6CDD915B1C35964400DBC2E2 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 4R7J4L6EG2;
+						DevelopmentTeam = 4DHQU43U3E;
 						LastSwiftMigration = 1010;
 					};
 					6CDD916F1C35964400DBC2E2 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4DHQU43U3E;
 						LastSwiftMigration = 1010;
 						TestTargetID = 6CDD915B1C35964400DBC2E2;
 					};
 					6CDD917A1C35964400DBC2E2 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4DHQU43U3E;
 						LastSwiftMigration = 1010;
 						TestTargetID = 6CDD915B1C35964400DBC2E2;
 					};
@@ -411,6 +413,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -669,10 +672,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4DHQU43U3E;
 				INFOPLIST_FILE = "Swift-LightBlue/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pluto-y.Swift-LightBlue";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.notmoniapps.pluto-y.Swift-LightBlue";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Swift-LightBlue/Swift-LightBlue-Bridging-Header.h";
@@ -690,10 +694,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4DHQU43U3E;
 				INFOPLIST_FILE = "Swift-LightBlue/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pluto-y.Swift-LightBlue";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.notmoniapps.pluto-y.Swift-LightBlue";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Swift-LightBlue/Swift-LightBlue-Bridging-Header.h";
@@ -707,9 +712,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4DHQU43U3E;
 				INFOPLIST_FILE = "Swift-LightBlueTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pluto-y.Swift-LightBlueTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.notmoniapps.pluto-y.Swift-LightBlueTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.2;
@@ -721,9 +727,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4DHQU43U3E;
 				INFOPLIST_FILE = "Swift-LightBlueTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pluto-y.Swift-LightBlueTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.notmoniapps.pluto-y.Swift-LightBlueTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.2;
@@ -734,9 +741,10 @@
 		6CDD918B1C35964400DBC2E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 4DHQU43U3E;
 				INFOPLIST_FILE = "Swift-LightBlueUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pluto-y.Swift-LightBlueUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.notmoniapps.pluto-y.Swift-LightBlueUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.2;
@@ -748,9 +756,10 @@
 		6CDD918C1C35964400DBC2E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 4DHQU43U3E;
 				INFOPLIST_FILE = "Swift-LightBlueUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pluto-y.Swift-LightBlueUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.notmoniapps.pluto-y.Swift-LightBlueUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.2;
