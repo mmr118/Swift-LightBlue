@@ -60,6 +60,20 @@
 		6CFFE93E1C44923100D061ED /* AlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFE93D1C44923100D061ED /* AlertUtil.swift */; };
 		97681D8C29146885005EEC17 /* StandardCBUUIDKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681D8B29146885005EEC17 /* StandardCBUUIDKind.swift */; };
 		97681D8E29146DE1005EEC17 /* CBService+LightBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681D8D29146DE1005EEC17 /* CBService+LightBlue.swift */; };
+		97681D99291475B2005EEC17 /* SwiftUI_LightBlueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681D98291475B2005EEC17 /* SwiftUI_LightBlueApp.swift */; };
+		97681D9B291475B2005EEC17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681D9A291475B2005EEC17 /* ContentView.swift */; };
+		97681D9D291475B4005EEC17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97681D9C291475B4005EEC17 /* Assets.xcassets */; };
+		97681DA0291475B4005EEC17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97681D9F291475B4005EEC17 /* Preview Assets.xcassets */; };
+		97681DA2291475B4005EEC17 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681DA1291475B4005EEC17 /* Persistence.swift */; };
+		97681DA5291475B4005EEC17 /* SwiftUI_LightBlue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97681DA3291475B4005EEC17 /* SwiftUI_LightBlue.xcdatamodeld */; };
+		97681DA9291475DA005EEC17 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A78BD21E1AC02004E89AB /* Constants.swift */; };
+		97681DAA291475DA005EEC17 /* CBCharacteristic+LightBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A78BF21E1AC02004E89AB /* CBCharacteristic+LightBlue.swift */; };
+		97681DAB291475DA005EEC17 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A78C021E1AC02004E89AB /* BluetoothManager.swift */; };
+		97681DAC291475DA005EEC17 /* CBAdvertisementData+LightBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A78C121E1AC02004E89AB /* CBAdvertisementData+LightBlue.swift */; };
+		97681DAD291475DA005EEC17 /* CBCharacteristicProperties+LightBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A78C221E1AC02004E89AB /* CBCharacteristicProperties+LightBlue.swift */; };
+		97681DAE291475DA005EEC17 /* CBService+LightBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681D8D29146DE1005EEC17 /* CBService+LightBlue.swift */; };
+		97681DAF291475DA005EEC17 /* StandardCBUUIDKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681D8B29146885005EEC17 /* StandardCBUUIDKind.swift */; };
+		97681DB0291475DA005EEC17 /* BluetoothDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A78C421E1AC02004E89AB /* BluetoothDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +155,13 @@
 		6CFFE93D1C44923100D061ED /* AlertUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertUtil.swift; path = Utils/AlertUtil.swift; sourceTree = "<group>"; };
 		97681D8B29146885005EEC17 /* StandardCBUUIDKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardCBUUIDKind.swift; sourceTree = "<group>"; };
 		97681D8D29146DE1005EEC17 /* CBService+LightBlue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CBService+LightBlue.swift"; sourceTree = "<group>"; };
+		97681D96291475B2005EEC17 /* SwiftUI-LightBlue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-LightBlue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97681D98291475B2005EEC17 /* SwiftUI_LightBlueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_LightBlueApp.swift; sourceTree = "<group>"; };
+		97681D9A291475B2005EEC17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		97681D9C291475B4005EEC17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97681D9F291475B4005EEC17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		97681DA1291475B4005EEC17 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		97681DA4291475B4005EEC17 /* SwiftUI_LightBlue.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUI_LightBlue.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +180,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6CDD91781C35964400DBC2E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97681D93291475B2005EEC17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -243,6 +271,7 @@
 				6CDD915E1C35964400DBC2E2 /* Swift-LightBlue */,
 				6CDD91731C35964400DBC2E2 /* Swift-LightBlueTests */,
 				6CDD917E1C35964400DBC2E2 /* Swift-LightBlueUITests */,
+				97681D97291475B2005EEC17 /* SwiftUI-LightBlue */,
 				6CDD915D1C35964400DBC2E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -253,6 +282,7 @@
 				6CDD915C1C35964400DBC2E2 /* Swift-LightBlue.app */,
 				6CDD91701C35964400DBC2E2 /* Swift-LightBlueTests.xctest */,
 				6CDD917B1C35964400DBC2E2 /* Swift-LightBlueUITests.xctest */,
+				97681D96291475B2005EEC17 /* SwiftUI-LightBlue.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -347,6 +377,27 @@
 			name = Storyboards;
 			sourceTree = "<group>";
 		};
+		97681D97291475B2005EEC17 /* SwiftUI-LightBlue */ = {
+			isa = PBXGroup;
+			children = (
+				97681D98291475B2005EEC17 /* SwiftUI_LightBlueApp.swift */,
+				97681D9A291475B2005EEC17 /* ContentView.swift */,
+				97681D9C291475B4005EEC17 /* Assets.xcassets */,
+				97681DA1291475B4005EEC17 /* Persistence.swift */,
+				97681DA3291475B4005EEC17 /* SwiftUI_LightBlue.xcdatamodeld */,
+				97681D9E291475B4005EEC17 /* Preview Content */,
+			);
+			path = "SwiftUI-LightBlue";
+			sourceTree = "<group>";
+		};
+		97681D9E291475B4005EEC17 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				97681D9F291475B4005EEC17 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -403,13 +454,30 @@
 			productReference = 6CDD917B1C35964400DBC2E2 /* Swift-LightBlueUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		97681D95291475B2005EEC17 /* SwiftUI-LightBlue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97681DA6291475B4005EEC17 /* Build configuration list for PBXNativeTarget "SwiftUI-LightBlue" */;
+			buildPhases = (
+				97681D92291475B2005EEC17 /* Sources */,
+				97681D93291475B2005EEC17 /* Frameworks */,
+				97681D94291475B2005EEC17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftUI-LightBlue";
+			productName = "SwiftUI-LightBlue";
+			productReference = 97681D96291475B2005EEC17 /* SwiftUI-LightBlue.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		6CDD91541C35964400DBC2E2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				ORGANIZATIONNAME = "Pluto-y";
 				TargetAttributes = {
@@ -430,6 +498,11 @@
 						LastSwiftMigration = "";
 						TestTargetID = 6CDD915B1C35964400DBC2E2;
 					};
+					97681D95291475B2005EEC17 = {
+						CreatedOnToolsVersion = 14.0;
+						DevelopmentTeam = 4DHQU43U3E;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 6CDD91571C35964400DBC2E2 /* Build configuration list for PBXProject "Swift-LightBlue" */;
@@ -447,6 +520,7 @@
 			projectRoot = "";
 			targets = (
 				6CDD915B1C35964400DBC2E2 /* Swift-LightBlue */,
+				97681D95291475B2005EEC17 /* SwiftUI-LightBlue */,
 				6CDD916F1C35964400DBC2E2 /* Swift-LightBlueTests */,
 				6CDD917A1C35964400DBC2E2 /* Swift-LightBlueUITests */,
 			);
@@ -484,6 +558,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97681D94291475B2005EEC17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97681DA0291475B4005EEC17 /* Preview Assets.xcassets in Resources */,
+				97681D9D291475B4005EEC17 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +632,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CDD91801C35964400DBC2E2 /* Swift_LightBlueUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97681D92291475B2005EEC17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97681DA9291475DA005EEC17 /* Constants.swift in Sources */,
+				97681DAA291475DA005EEC17 /* CBCharacteristic+LightBlue.swift in Sources */,
+				97681DAB291475DA005EEC17 /* BluetoothManager.swift in Sources */,
+				97681DAC291475DA005EEC17 /* CBAdvertisementData+LightBlue.swift in Sources */,
+				97681DAD291475DA005EEC17 /* CBCharacteristicProperties+LightBlue.swift in Sources */,
+				97681DAE291475DA005EEC17 /* CBService+LightBlue.swift in Sources */,
+				97681DAF291475DA005EEC17 /* StandardCBUUIDKind.swift in Sources */,
+				97681DB0291475DA005EEC17 /* BluetoothDelegate.swift in Sources */,
+				97681DA5291475B4005EEC17 /* SwiftUI_LightBlue.xcdatamodeld in Sources */,
+				97681DA2291475B4005EEC17 /* Persistence.swift in Sources */,
+				97681D9B291475B2005EEC17 /* ContentView.swift in Sources */,
+				97681D99291475B2005EEC17 /* SwiftUI_LightBlueApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -796,6 +898,81 @@
 			};
 			name = Release;
 		};
+		97681DA7291475B4005EEC17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-LightBlue/Preview Content\"";
+				DEVELOPMENT_TEAM = 4DHQU43U3E;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Blueooth is used to connect to and inspect near devices";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Bluetooth is used to advertise the virtual devices you've created";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.notmoniapps.SwiftUI-LightBlue";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97681DA8291475B4005EEC17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-LightBlue/Preview Content\"";
+				DEVELOPMENT_TEAM = 4DHQU43U3E;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Blueooth is used to connect to and inspect near devices";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Bluetooth is used to advertise the virtual devices you've created";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.notmoniapps.SwiftUI-LightBlue";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -835,7 +1012,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		97681DA6291475B4005EEC17 /* Build configuration list for PBXNativeTarget "SwiftUI-LightBlue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97681DA7291475B4005EEC17 /* Debug */,
+				97681DA8291475B4005EEC17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		97681DA3291475B4005EEC17 /* SwiftUI_LightBlue.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				97681DA4291475B4005EEC17 /* SwiftUI_LightBlue.xcdatamodel */,
+			);
+			currentVersion = 97681DA4291475B4005EEC17 /* SwiftUI_LightBlue.xcdatamodel */;
+			path = SwiftUI_LightBlue.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6CDD91541C35964400DBC2E2 /* Project object */;
 }
