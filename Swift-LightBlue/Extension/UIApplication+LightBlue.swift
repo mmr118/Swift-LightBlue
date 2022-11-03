@@ -9,20 +9,30 @@
 import UIKit
 
 extension UIApplication {
-    
-    class func topViewController(_ viewController: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
-        if let nav = viewController as? UINavigationController {
+
+    class func topViewController(_ viewController: UIViewController? = nil) -> UIViewController? {
+        guard let controller = viewController ?? presentingViewController else { return nil }
+
+        if let nav = controller as? UINavigationController {
             return topViewController(nav.visibleViewController)
         }
-        if let tab = viewController as? UITabBarController {
+
+        if let tab = controller as? UITabBarController {
             if let selected = tab.selectedViewController {
                 return topViewController(selected)
             }
         }
-        if let presented = viewController?.presentedViewController {
+        if let presented = controller.presentedViewController {
             return topViewController(presented)
         }
-        
-        return viewController
+
+        return controller
     }
+
+    private static var presentingViewController: UIViewController? {
+        let rootViewController = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first?.rootViewController
+        return rootViewController?.presentedViewController ?? rootViewController
+
+    }
+
 }

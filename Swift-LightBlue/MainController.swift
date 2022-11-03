@@ -46,10 +46,11 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
         static func == (lhs: PeripheralInfos, rhs: PeripheralInfos) -> Bool {
             return lhs.peripheral.isEqual(rhs.peripheral)
         }
-        
-        var hashValue: Int {
-            return peripheral.hash
+
+        func hash(into hasher: inout Hasher) {
+            hasher.combine(peripheral.identifier)
         }
+
     }
     
     let bluetoothManager = BluetoothManager.getInstance()
@@ -282,7 +283,7 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
      
      - parameter state: The bluetooth state
      */
-    func didUpdateState(_ state: CBCentralManagerState) {
+    func didUpdateState(_ state: CBManagerState) {
         print("MainController --> didUpdateState:\(state)")
         switch state {
         case .resetting:
@@ -311,6 +312,9 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
             bluetoothManager.disconnectPeripheral()
             ConnectingView.hideConnectingView()
             UnavailableView.showUnavailableView()
+        @unknown default:
+            print("@unknown default")
+            didUpdateState(.unknown)
         }
     }
     
