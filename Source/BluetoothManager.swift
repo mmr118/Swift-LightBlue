@@ -8,32 +8,34 @@
 
 import CoreBluetooth
 
-public class BluetoothManager : NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
+public class BluetoothManager : NSObject, CBCentralManagerDelegate, CBPeripheralDelegate, ObservableObject {
+
+    /// Save the single instance
+    static var shared: BluetoothManager = BluetoothManager()
     
     var _manager : CBCentralManager?
+
     var delegate : BluetoothDelegate?
-    private(set) var connected = false
-    var state: CBManagerState? {
-        guard _manager != nil else {
-            return nil
-        }
-        return CBManagerState(rawValue: (_manager?.state.rawValue)!)
-    }
-    private var timeoutMonitor : Timer? /// Timeout monitor of connect to peripheral
-    private var interrogateMonitor : Timer? /// Timeout monitor of interrogate the peripheral
+
+    @Published private(set) var connected = false
+
+    var state: CBManagerState? { _manager?.state }
+
+    /// Timeout monitor of connect to peripheral
+    private var timeoutMonitor : Timer?
+
+    /// Timeout monitor of interrogate the peripheral
+    private var interrogateMonitor : Timer?
+
     private let notifCenter = NotificationCenter.default
     private var isConnecting = false
-    var logs = [String]()
-    private(set) var connectedPeripheral : CBPeripheral?
-    private(set) var connectedServices : [CBService]?
+
+    @Published var logs = [String]()
+    @Published private(set) var connectedPeripheral : CBPeripheral?
+    @Published private(set) var connectedServices : [CBService]?
     
-    /// Save the single instance
-    static private var instance : BluetoothManager {
-        return sharedInstance
-    }
-    
-    private static let sharedInstance = BluetoothManager()
-    
+
+    // MARK: - Init
     private override init() {
         super.init()
         initCBCentralManager()
@@ -47,16 +49,6 @@ public class BluetoothManager : NSObject, CBCentralManagerDelegate, CBPeripheral
         var dic : [String : Any] = Dictionary()
         dic[CBCentralManagerOptionShowPowerAlertKey] = false
         _manager = CBCentralManager(delegate: self, queue: nil, options: dic)
-        
-    }
-    
-    /**
-     Singleton pattern method
-     
-     - returns: Bluetooth single instance
-     */
-    static func getInstance() -> BluetoothManager {
-        return instance
     }
     
     /**

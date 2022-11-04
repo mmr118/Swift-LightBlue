@@ -31,29 +31,9 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 
 
 class MainController: UIViewController, UITableViewDelegate, UITableViewDataSource, BluetoothDelegate {
-    
-    fileprivate class PeripheralInfos: Equatable, Hashable {
-        let peripheral: CBPeripheral
-        var RSSI: Int = 0
-        var advertisementData: [String: Any] = [:]
-        var lastUpdatedTimeInterval: TimeInterval
-        
-        init(_ peripheral: CBPeripheral) {
-            self.peripheral = peripheral
-            self.lastUpdatedTimeInterval = Date().timeIntervalSince1970
-        }
-        
-        static func == (lhs: PeripheralInfos, rhs: PeripheralInfos) -> Bool {
-            return lhs.peripheral.isEqual(rhs.peripheral)
-        }
 
-        func hash(into hasher: inout Hasher) {
-            hasher.combine(peripheral.identifier)
-        }
+    var bluetoothManager: BluetoothManager { .shared }
 
-    }
-    
-    let bluetoothManager = BluetoothManager.getInstance()
     var connectingView: ConnectingView?
     fileprivate var nearbyPeripheralInfos: [PeripheralInfos] = []
     var cachedVirtualPeripherals: [VirtualPeripheral] {
@@ -65,11 +45,10 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var selectedVirtualPeriperalIndex: Int = -1
     @IBOutlet var peripheralsTb: UITableView!
     
-    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        self.initAll()
-    }
+    super.viewDidLoad()
+    self.initAll()
+}
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

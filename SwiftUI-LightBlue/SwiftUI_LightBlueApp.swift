@@ -10,12 +10,11 @@ import SwiftUI
 
 @main
 struct SwiftUI_LightBlueApp: App {
-    let persistenceController = PersistenceController.shared
+    let dataManager = AppDataManager.shared
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

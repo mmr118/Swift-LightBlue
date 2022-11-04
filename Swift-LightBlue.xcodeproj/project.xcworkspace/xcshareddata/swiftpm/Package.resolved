@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "nmautilities",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mmr118/NMAUtilities",
+      "state" : {
+        "branch" : "update",
+        "revision" : "6c9f455f214c73e2c28feccdf2a135cf5335350b"
+      }
+    }
+  ],
+  "version" : 2
+}

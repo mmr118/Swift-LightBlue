@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -58,13 +58,15 @@
 		6CDD91751C35964400DBC2E2 /* Swift_LightBlueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDD91741C35964400DBC2E2 /* Swift_LightBlueTests.swift */; };
 		6CDD91801C35964400DBC2E2 /* Swift_LightBlueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDD917F1C35964400DBC2E2 /* Swift_LightBlueUITests.swift */; };
 		6CFFE93E1C44923100D061ED /* AlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFE93D1C44923100D061ED /* AlertUtil.swift */; };
+		973F424A29153E8800694235 /* NMAUtilities in Frameworks */ = {isa = PBXBuildFile; productRef = 973F424929153E8800694235 /* NMAUtilities */; };
+		973F424D29153E9600694235 /* NMAUtilities in Frameworks */ = {isa = PBXBuildFile; productRef = 973F424C29153E9600694235 /* NMAUtilities */; };
 		97681D8C29146885005EEC17 /* StandardCBUUIDKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681D8B29146885005EEC17 /* StandardCBUUIDKind.swift */; };
 		97681D8E29146DE1005EEC17 /* CBService+LightBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681D8D29146DE1005EEC17 /* CBService+LightBlue.swift */; };
 		97681D99291475B2005EEC17 /* SwiftUI_LightBlueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681D98291475B2005EEC17 /* SwiftUI_LightBlueApp.swift */; };
 		97681D9B291475B2005EEC17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681D9A291475B2005EEC17 /* ContentView.swift */; };
 		97681D9D291475B4005EEC17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97681D9C291475B4005EEC17 /* Assets.xcassets */; };
 		97681DA0291475B4005EEC17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97681D9F291475B4005EEC17 /* Preview Assets.xcassets */; };
-		97681DA2291475B4005EEC17 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681DA1291475B4005EEC17 /* Persistence.swift */; };
+		97681DA2291475B4005EEC17 /* AppDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681DA1291475B4005EEC17 /* AppDataManager.swift */; };
 		97681DA5291475B4005EEC17 /* SwiftUI_LightBlue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97681DA3291475B4005EEC17 /* SwiftUI_LightBlue.xcdatamodeld */; };
 		97681DA9291475DA005EEC17 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A78BD21E1AC02004E89AB /* Constants.swift */; };
 		97681DAA291475DA005EEC17 /* CBCharacteristic+LightBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A78BF21E1AC02004E89AB /* CBCharacteristic+LightBlue.swift */; };
@@ -74,6 +76,15 @@
 		97681DAE291475DA005EEC17 /* CBService+LightBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681D8D29146DE1005EEC17 /* CBService+LightBlue.swift */; };
 		97681DAF291475DA005EEC17 /* StandardCBUUIDKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681D8B29146885005EEC17 /* StandardCBUUIDKind.swift */; };
 		97681DB0291475DA005EEC17 /* BluetoothDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A78C421E1AC02004E89AB /* BluetoothDelegate.swift */; };
+		97681DB229148132005EEC17 /* DeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681DB129148132005EEC17 /* DeviceListView.swift */; };
+		97681DB429148455005EEC17 /* PreviewDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681DB329148455005EEC17 /* PreviewDataManager.swift */; };
+		97681DB829148723005EEC17 /* BTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681DB729148723005EEC17 /* BTManager.swift */; };
+		97681DBB29148855005EEC17 /* PeripheralInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681DBA29148855005EEC17 /* PeripheralInfos.swift */; };
+		97681DBC2914889A005EEC17 /* PeripheralInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681DBA29148855005EEC17 /* PeripheralInfos.swift */; };
+		97681DBD291488EA005EEC17 /* PreferencesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A78F021E1AD70004E89AB /* PreferencesStore.swift */; };
+		97681DBF29148934005EEC17 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A78E921E1AD49004E89AB /* Preferences.swift */; };
+		97681DC029148989005EEC17 /* LogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A78EF21E1AD70004E89AB /* LogStore.swift */; };
+		97681DC229148CC2005EEC17 /* NearByPeripheralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97681DC129148CC2005EEC17 /* NearByPeripheralView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,8 +171,13 @@
 		97681D9A291475B2005EEC17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		97681D9C291475B4005EEC17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97681D9F291475B4005EEC17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		97681DA1291475B4005EEC17 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		97681DA1291475B4005EEC17 /* AppDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataManager.swift; sourceTree = "<group>"; };
 		97681DA4291475B4005EEC17 /* SwiftUI_LightBlue.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUI_LightBlue.xcdatamodel; sourceTree = "<group>"; };
+		97681DB129148132005EEC17 /* DeviceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListView.swift; sourceTree = "<group>"; };
+		97681DB329148455005EEC17 /* PreviewDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewDataManager.swift; sourceTree = "<group>"; };
+		97681DB729148723005EEC17 /* BTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTManager.swift; sourceTree = "<group>"; };
+		97681DBA29148855005EEC17 /* PeripheralInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralInfos.swift; sourceTree = "<group>"; };
+		97681DC129148CC2005EEC17 /* NearByPeripheralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByPeripheralView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				973F424A29153E8800694235 /* NMAUtilities in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +207,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				973F424D29153E9600694235 /* NMAUtilities in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +217,7 @@
 		5D1A78BC21E1AC02004E89AB /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				5D1A78EF21E1AD70004E89AB /* LogStore.swift */,
 				5D1A78BD21E1AC02004E89AB /* Constants.swift */,
 				5D1A78BF21E1AC02004E89AB /* CBCharacteristic+LightBlue.swift */,
 				5D1A78C021E1AC02004E89AB /* BluetoothManager.swift */,
@@ -207,6 +226,7 @@
 				97681D8D29146DE1005EEC17 /* CBService+LightBlue.swift */,
 				97681D8B29146885005EEC17 /* StandardCBUUIDKind.swift */,
 				5D1A78C421E1AC02004E89AB /* BluetoothDelegate.swift */,
+				97681DB92914884D005EEC17 /* Added */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -235,7 +255,6 @@
 		5D1A78E821E1AD49004E89AB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5D1A78E921E1AD49004E89AB /* Preferences.swift */,
 				5D1A78EA21E1AD49004E89AB /* VirtualPeripheral.swift */,
 			);
 			path = Model;
@@ -245,8 +264,6 @@
 			isa = PBXGroup;
 			children = (
 				5D1A78EE21E1AD70004E89AB /* VirtualPeripheralStore.swift */,
-				5D1A78EF21E1AD70004E89AB /* LogStore.swift */,
-				5D1A78F021E1AD70004E89AB /* PreferencesStore.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -273,6 +290,7 @@
 				6CDD917E1C35964400DBC2E2 /* Swift-LightBlueUITests */,
 				97681D97291475B2005EEC17 /* SwiftUI-LightBlue */,
 				6CDD915D1C35964400DBC2E2 /* Products */,
+				973F424B29153E9600694235 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -332,6 +350,13 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		973F424B29153E9600694235 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		97681D8F291474B7005EEC17 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -381,9 +406,11 @@
 			isa = PBXGroup;
 			children = (
 				97681D98291475B2005EEC17 /* SwiftUI_LightBlueApp.swift */,
-				97681D9A291475B2005EEC17 /* ContentView.swift */,
+				97681DB62914870B005EEC17 /* Models */,
+				97681DB529148700005EEC17 /* Views */,
 				97681D9C291475B4005EEC17 /* Assets.xcassets */,
-				97681DA1291475B4005EEC17 /* Persistence.swift */,
+				97681DA1291475B4005EEC17 /* AppDataManager.swift */,
+				97681DB329148455005EEC17 /* PreviewDataManager.swift */,
 				97681DA3291475B4005EEC17 /* SwiftUI_LightBlue.xcdatamodeld */,
 				97681D9E291475B4005EEC17 /* Preview Content */,
 			);
@@ -396,6 +423,34 @@
 				97681D9F291475B4005EEC17 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		97681DB529148700005EEC17 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97681D9A291475B2005EEC17 /* ContentView.swift */,
+				97681DB129148132005EEC17 /* DeviceListView.swift */,
+				97681DC129148CC2005EEC17 /* NearByPeripheralView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		97681DB62914870B005EEC17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				97681DB729148723005EEC17 /* BTManager.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		97681DB92914884D005EEC17 /* Added */ = {
+			isa = PBXGroup;
+			children = (
+				5D1A78E921E1AD49004E89AB /* Preferences.swift */,
+				5D1A78F021E1AD70004E89AB /* PreferencesStore.swift */,
+				97681DBA29148855005EEC17 /* PeripheralInfos.swift */,
+			);
+			name = Added;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +469,9 @@
 			dependencies = (
 			);
 			name = "Swift-LightBlue";
+			packageProductDependencies = (
+				973F424929153E8800694235 /* NMAUtilities */,
+			);
 			productName = "Swift-LightBlue";
 			productReference = 6CDD915C1C35964400DBC2E2 /* Swift-LightBlue.app */;
 			productType = "com.apple.product-type.application";
@@ -467,6 +525,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI-LightBlue";
+			packageProductDependencies = (
+				973F424C29153E9600694235 /* NMAUtilities */,
+			);
 			productName = "SwiftUI-LightBlue";
 			productReference = 97681D96291475B2005EEC17 /* SwiftUI-LightBlue.app */;
 			productType = "com.apple.product-type.application";
@@ -515,6 +576,9 @@
 				Base,
 			);
 			mainGroup = 6CDD91531C35964400DBC2E2;
+			packageReferences = (
+				973F424829153E8800694235 /* XCRemoteSwiftPackageReference "NMAUtilities" */,
+			);
 			productRefGroup = 6CDD915D1C35964400DBC2E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -604,6 +668,7 @@
 				5D227D2B21DF6605006BE6DB /* LogViewController.swift in Sources */,
 				6C195EB11C57C2BC00AEF1DA /* CharacteristicController.swift in Sources */,
 				5D1FE09921EC30E500686479 /* EditCharacteristicPropertyTableViewController.swift in Sources */,
+				97681DBC2914889A005EEC17 /* PeripheralInfos.swift in Sources */,
 				5D1A78EC21E1AD49004E89AB /* VirtualPeripheral.swift in Sources */,
 				6C7526111C397A93009445CE /* RootController.swift in Sources */,
 				5D1A78C821E1AC02004E89AB /* BluetoothManager.swift in Sources */,
@@ -640,16 +705,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				97681DA9291475DA005EEC17 /* Constants.swift in Sources */,
+				97681DBD291488EA005EEC17 /* PreferencesStore.swift in Sources */,
 				97681DAA291475DA005EEC17 /* CBCharacteristic+LightBlue.swift in Sources */,
 				97681DAB291475DA005EEC17 /* BluetoothManager.swift in Sources */,
 				97681DAC291475DA005EEC17 /* CBAdvertisementData+LightBlue.swift in Sources */,
 				97681DAD291475DA005EEC17 /* CBCharacteristicProperties+LightBlue.swift in Sources */,
 				97681DAE291475DA005EEC17 /* CBService+LightBlue.swift in Sources */,
+				97681DC029148989005EEC17 /* LogStore.swift in Sources */,
 				97681DAF291475DA005EEC17 /* StandardCBUUIDKind.swift in Sources */,
+				97681DC229148CC2005EEC17 /* NearByPeripheralView.swift in Sources */,
+				97681DBF29148934005EEC17 /* Preferences.swift in Sources */,
+				97681DB229148132005EEC17 /* DeviceListView.swift in Sources */,
 				97681DB0291475DA005EEC17 /* BluetoothDelegate.swift in Sources */,
 				97681DA5291475B4005EEC17 /* SwiftUI_LightBlue.xcdatamodeld in Sources */,
-				97681DA2291475B4005EEC17 /* Persistence.swift in Sources */,
+				97681DA2291475B4005EEC17 /* AppDataManager.swift in Sources */,
+				97681DBB29148855005EEC17 /* PeripheralInfos.swift in Sources */,
+				97681DB829148723005EEC17 /* BTManager.swift in Sources */,
 				97681D9B291475B2005EEC17 /* ContentView.swift in Sources */,
+				97681DB429148455005EEC17 /* PreviewDataManager.swift in Sources */,
 				97681D99291475B2005EEC17 /* SwiftUI_LightBlueApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -805,7 +878,10 @@
 				DEVELOPMENT_TEAM = 4DHQU43U3E;
 				INFOPLIST_FILE = "Swift-LightBlue/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.notmoniapps.pluto-y.Swift-LightBlue";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -827,7 +903,10 @@
 				DEVELOPMENT_TEAM = 4DHQU43U3E;
 				INFOPLIST_FILE = "Swift-LightBlue/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.notmoniapps.pluto-y.Swift-LightBlue";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -844,7 +923,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 4DHQU43U3E;
 				INFOPLIST_FILE = "Swift-LightBlueTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.notmoniapps.pluto-y.Swift-LightBlueTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -859,7 +942,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 4DHQU43U3E;
 				INFOPLIST_FILE = "Swift-LightBlueTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.notmoniapps.pluto-y.Swift-LightBlueTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -873,7 +960,11 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = 4DHQU43U3E;
 				INFOPLIST_FILE = "Swift-LightBlueUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.notmoniapps.pluto-y.Swift-LightBlueUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -888,7 +979,11 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = 4DHQU43U3E;
 				INFOPLIST_FILE = "Swift-LightBlueUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.notmoniapps.pluto-y.Swift-LightBlueUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -923,7 +1018,10 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -961,7 +1059,10 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.notmoniapps.SwiftUI-LightBlue";
@@ -1022,6 +1123,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		973F424829153E8800694235 /* XCRemoteSwiftPackageReference "NMAUtilities" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mmr118/NMAUtilities";
+			requirement = {
+				branch = update;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		973F424929153E8800694235 /* NMAUtilities */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 973F424829153E8800694235 /* XCRemoteSwiftPackageReference "NMAUtilities" */;
+			productName = NMAUtilities;
+		};
+		973F424C29153E9600694235 /* NMAUtilities */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 973F424829153E8800694235 /* XCRemoteSwiftPackageReference "NMAUtilities" */;
+			productName = NMAUtilities;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		97681DA3291475B4005EEC17 /* SwiftUI_LightBlue.xcdatamodeld */ = {
